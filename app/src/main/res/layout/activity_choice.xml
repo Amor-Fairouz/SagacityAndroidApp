@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#795548"
+    tools:context=".ChoiceActivity">
+
+    <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="296dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/splash"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/fbuser"
+        android:text="Sagacity with Facebook"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:background="#795548"
+
+        android:layout_below="@+id/row1"
+        android:layout_alignRight="@+id/row1"
+        android:layout_alignEnd="@+id/row1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_guesst"
+        android:id="@+id/guesticon"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/fbuser"
+        android:layout_toStartOf="@+id/fbuser"
+        android:layout_marginBottom="78dp" />
+
+    <Button
+        android:id="@+id/guesstuser"
+        android:text="Guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#795548"
+
+        android:layout_weight="0.88"
+        android:layout_alignTop="@+id/guesticon"
+        android:layout_alignLeft="@+id/fbuser"
+        android:layout_alignStart="@+id/fbuser"
+        android:layout_alignRight="@+id/fbuser"
+        android:layout_alignEnd="@+id/fbuser" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_facebook"
+        android:id="@+id/icfb"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/fbuser"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView" />
+
+
+</RelativeLayout>
